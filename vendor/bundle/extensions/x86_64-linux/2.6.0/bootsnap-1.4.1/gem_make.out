@@ -1,0 +1,40 @@
+current directory: /home/beto/Documentos/BWTO/Univercidad/SeptimoSemestre/IngenieriaDeSofware/app/kcode/vendor/bundle/gems/bootsnap-1.4.1/ext/bootsnap
+/home/beto/.rvm/rubies/ruby-2.6.0/bin/ruby -I /home/beto/.rvm/rubies/ruby-2.6.0/lib/ruby/site_ruby/2.6.0 -r ./siteconf20190325-4742-17qlr8f.rb extconf.rb
+creating Makefile
+
+current directory: /home/beto/Documentos/BWTO/Univercidad/SeptimoSemestre/IngenieriaDeSofware/app/kcode/vendor/bundle/gems/bootsnap-1.4.1/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /home/beto/Documentos/BWTO/Univercidad/SeptimoSemestre/IngenieriaDeSofware/app/kcode/vendor/bundle/gems/bootsnap-1.4.1/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+bootsnap.c: En la función ‘get_ruby_platform’:
+bootsnap.c:214:3: aviso: ISO C90 prohíbe mezclar declaraciones y código [-Wdeclaration-after-statement]
+   struct utsname utsname;
+   ^~~~~~
+bootsnap.c: En la función ‘bs_cache_path’:
+bootsnap.c:240:39: aviso: formato ‘%llx’ espera un argumento de tipo ‘long long unsigned int’, pero el argumento 5 es de tipo ‘uint64_t’ {también conocido como ‘long unsigned int’} [-Wformat=]
+   sprintf(*cache_path, "%s/%02x/%014llx", cachedir, first_byte, remainder);
+                                 ~~~~~~^                         ~~~~~~~~~
+                                 %014lx
+bootsnap.c: En la función ‘bs_rb_fetch’:
+bootsnap.c:281:3: aviso: ISO C90 prohíbe mezclar declaraciones y código [-Wdeclaration-after-statement]
+   char * cachedir = RSTRING_PTR(cachedir_v);
+   ^~~~
+bootsnap.c:623:13: aviso: puede ser que se utilice ‘output_data’ sin inicializar en esta función [-Wmaybe-uninitialized]
+     else if (!NIL_P(output_data))             goto succeed; /* fast-path, goal */
+             ^
+bootsnap.c:594:9: nota: ‘output_data’ se declaró aquí
+   VALUE output_data;  /* return data, e.g. ruby hash or loaded iseq */
+         ^~~~~~~~~~~
+bootsnap.c: En el nivel principal:
+cc1: aviso: no se reconoce la opción de línea de órdenes ‘-Wno-self-assign’
+cc1: aviso: no se reconoce la opción de línea de órdenes ‘-Wno-parentheses-equality’
+cc1: aviso: no se reconoce la opción de línea de órdenes ‘-Wno-constant-logical-operand’
+linking shared-object bootsnap/bootsnap.so
+/usr/bin/ld: bootsnap.o: en la función `atomic_write_cache_file':
+/home/beto/Documentos/BWTO/Univercidad/SeptimoSemestre/IngenieriaDeSofware/app/kcode/vendor/bundle/gems/bootsnap-1.4.1/ext/bootsnap/bootsnap.c:479: aviso: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+
+current directory: /home/beto/Documentos/BWTO/Univercidad/SeptimoSemestre/IngenieriaDeSofware/app/kcode/vendor/bundle/gems/bootsnap-1.4.1/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20190325-4742-lldg0b/bootsnap

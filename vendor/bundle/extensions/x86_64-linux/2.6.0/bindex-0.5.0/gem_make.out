@@ -1,0 +1,15 @@
+current directory: /home/beto/Documentos/BWTO/Univercidad/SeptimoSemestre/IngenieriaDeSofware/app/kcode/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+/home/beto/.rvm/rubies/ruby-2.6.0/bin/ruby -I /home/beto/.rvm/rubies/ruby-2.6.0/lib/ruby/site_ruby/2.6.0 -r ./siteconf20190325-4742-2a9qxt.rb extconf.rb
+creating Makefile
+
+current directory: /home/beto/Documentos/BWTO/Univercidad/SeptimoSemestre/IngenieriaDeSofware/app/kcode/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /home/beto/Documentos/BWTO/Univercidad/SeptimoSemestre/IngenieriaDeSofware/app/kcode/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.so
+
+current directory: /home/beto/Documentos/BWTO/Univercidad/SeptimoSemestre/IngenieriaDeSofware/app/kcode/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20190325-4742-1su1l3j/bindex
